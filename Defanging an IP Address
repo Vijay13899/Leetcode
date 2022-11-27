@@ -1,0 +1,22 @@
+Leetcode:1108
+
+class Solution {
+public:
+    string defangIPaddr(string address) {
+        string defanged="";
+        char dot = '.';
+        for(int i=0;i<address.size();i++){
+            if(address[i] == dot){
+                defanged += "[.]";
+            }
+            else{
+                defanged += address[i];
+            }
+        }
+        return defanged;
+    }
+};
+
+
+Explanation:
+Just declare an answer variable and whenever a dot comes you add [.] and else you add the actual number.
