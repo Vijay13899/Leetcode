@@ -1,0 +1,29 @@
+Leetcode 1689:
+
+class Solution {
+public:
+    int minPartitions(string n) {
+        return *max_element(begin(n),end(n))-'0';
+    }
+};
+
+
+Explanation:
+You can see that the given number is string and can be much longer and we cannot convert that to integer for calculation.
+They ask for decibinary numbers which means that the numbers that contain 0s and 1s eg.10 and 11(but not the way you normally assume ie. bin 2 and 3)
+So,If you observe closely you will see a pattern here.Take "82734".Here they ask for min deci-binary so first we need to reduce as big as possible.Biggest number 
+possible will be the number of digits of that number containing 1.
+
+
+82734--
+11111
+11111 -2
+10111 -3
+10101 -4
+10100
+10100
+10100 -7
+10000 -8
+
+
+This says clearly than you will need max number of 1s which will be equal to the max element present in that number ie 8.
