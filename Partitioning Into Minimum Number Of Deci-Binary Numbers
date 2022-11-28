@@ -9,9 +9,9 @@ public:
 
 
 Explanation:
-You can see that the given number is string and can be much longer and we cannot convert that to integer for calculation.
-They ask for decibinary numbers which means that the numbers that contain 0s and 1s eg.10 and 11(but not the way you normally assume ie. bin 2 and 3)
-So,If you observe closely you will see a pattern here.Take "82734".Here they ask for min deci-binary so first we need to reduce as big as possible.Biggest number 
+You can see that the given number is a string and can be much longer and we cannot convert that to an integer for calculation.
+They ask for dec binary numbers which means that the numbers that contain 0s and 1s eg.10 and 11(but not the way you normally assume ie. bin 2 and 3)
+So, if you observe closely you will see a pattern here. Take "82734".Here they ask for min dec binary so first, we need to reduce it as big as possible. The Biggest number 
 possible will be the number of digits of that number containing 1.
 
 
