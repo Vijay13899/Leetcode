@@ -1,0 +1,13 @@
+C++:
+
+vector<int> twoSum(vector<int>& nums, int target) {
+        map<int,int> hash;
+        for(int i=0;i<nums.size();i++){
+            int bal=target-nums[i];
+            if(hash.find(bal)!=hash.end()){
+                return {hash[bal],i};
+            }
+            hash[nums[i]]=i;
+        }
+        return {};
+    }
