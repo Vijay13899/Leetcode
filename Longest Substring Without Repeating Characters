@@ -1,0 +1,8 @@
+def lengthOfLongestSubstring(self, s: str) -> int:
+        max_l = start = 0
+        used = {}
+        for i,c in enumerate(s):
+            if c in used and start<=used[c]:
+                start = i+1
+            else:
+                used[c] = i
